@@ -54,7 +54,7 @@ else:
 if batalha==2:
     print("A não,um cachorro com raiva chegou pra te atacar,preoaresse para uma batalha!")
     while cachorro>0 or hp>0:
-        if cachorro<=0:
+        if cachorro<=0 or hp<=0:
             break
         acao=int(input("Você quer desviar ou atacar:").lower())
         if acao=="atacar":
@@ -70,7 +70,7 @@ if batalha==2:
             print("Você desvia,ninguém toma dano")
 elif batalha==1:
     while golem>0 or hp>0:
-        if golem<=0:
+        if golem<=0 or hp<=0:
             break
         acao=input("Você quer desviar ou atacar:").lower()
         if acao=="atacar":
