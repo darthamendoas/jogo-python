@@ -28,6 +28,7 @@ elif forca==inteligencia:
     danob=(forca+inteligencia)/2
 #Iniciando o jogo
 input("Com seu personagem criado,clique enter para começar sua aventura.")
+print("")
 pergunta=""
 resultado=0
 while pergunta!="1" and pergunta!="2":
@@ -51,13 +52,16 @@ elif pergunta==2:
     resultado=random.randint(forca,1)
 if resultado<7:
     print("Seu plano falhou, você não consguiu passar pelo golem, prepare-se para uma batalha!")
+    print("[--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---]")
     batalha=1
 else:
     print("Você conseguiu e prossegue sua aventura!!!")
+    print("")
     batalha=2
 #Batalha
 if batalha==2:
     print("Ah não, um cachorro com raiva chegou pra te atacar, prepare-se para uma batalha!!!!!!!!!!!!!!!")
+    print("")
     while cachorro>0 or hp>0:
         if cachorro<=0 or hp<=0:
             break
