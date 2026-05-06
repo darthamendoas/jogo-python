@@ -28,9 +28,10 @@ pergunta=""
 resultado=0
 while pergunta!="1" or pergunta!="2":
     pergunta=input("Voçê se encontra em frente de um enorme golem,você quer tentar distrair o golem com sua inteligência(1) ou tentar o derrubar para trás com sua força(2):")
-    if not pergunta=="1" or pergunta==2:
+    if not pergunta=="1" and not pergunta=="2":
         print("Responda com 1 ou 2!!!")
-        break
+        continue
+    break
 #Criando variaveis da batalha
 batalha=0
 golem=50
