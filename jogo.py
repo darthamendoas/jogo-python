@@ -27,7 +27,7 @@ input("Com seu personagem criado,clique enter para começar sua aventura.")
 pergunta=""
 resultado=0
 while pergunta!="1" or pergunta!="2":
-    pergunta=input("Voçê se encontra em frente de um enorme golem,você quer tentar distrair o golem com sua inteligência(1) ou tentar o derrubar para trás com sua força(2):")
+    pergunta=input("Você se encontra em frente a um enorme golem, você quer tentar distrair o golem com sua inteligência(1) ou tentar o derrubar para trás com sua força(2)?")
     if not pergunta=="1" and not pergunta==2:
         print("Responda com 1 ou 2!!!")
         continue
@@ -46,14 +46,14 @@ if pergunta==1:
 elif pergunta==2:
     resultado=random.randint(forca,1)
 if resultado<7:
-    print("Seu plano falhou,você não consguiu passar pelo golem,prepare-se para uma batalha!")
+    print("Seu plano falhou, você não consguiu passar pelo golem, prepare-se para uma batalha!")
     batalha=1
 else:
-    print("Você conseguiu e prossegue sua aventura")
+    print("Você conseguiu e prossegue sua aventura!!!")
     batalha=2
 #Batalha
 if batalha==2:
-    print("A não,um cachorro com raiva chegou pra te atacar,preoaresse para uma batalha!")
+    print("Ah não, um cachorro com raiva chegou pra te atacar, prepare-se para uma batalha!!!!!!!!!!!!!!!")
     while cachorro>0 or hp>0:
         if cachorro<=0 or hp<=0:
             break
@@ -87,6 +87,6 @@ elif batalha==1:
             print("Você desvia,ninguém toma dano")
 #Definindo vitória ou derrota
 if cachorro>0 or golem>0:
-    print("Você venceu,obrigado por jogar!!!!!")
+    print("Você venceu, obrigado por jogar!!!!!")
 elif hp<0:
-    print("Você perdeu bobão hahaha.")
+    print("Você perdeu bobão hahaha, e olha que é quase impossível...")
