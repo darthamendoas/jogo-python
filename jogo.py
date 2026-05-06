@@ -46,15 +46,16 @@ dbcachorro=5
 acao=0
 dano=0
 #Definindo a batalha
-if pergunta==1:
-    resultado=random.randint(inteligencia,10)
-elif pergunta==2:
-    resultado=random.randint(forca,1)
-if resultado<7:
+if pergunta=="1":
+    resultado=random.randint(inteligencia,15)
+elif pergunta=="2":
+    resultado=random.randint(forca,15)
+if resultado<=6:
+    print("")
     print("Seu plano falhou, você não consguiu passar pelo golem, prepare-se para uma batalha!")
     print("[--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---]")
     batalha=1
-else:
+elif resultado>=7:
     print("Você conseguiu e prossegue sua aventura!!!")
     print("")
     batalha=2
