@@ -2,6 +2,7 @@
 import random
 #Pegar nome e status
 input("Bem vindo ao rpg do justus, presione enter para continuar.")
+print("[--------------------------------------------------------]")
 nome=input("Qual é seu nome aventureiro/a: ")
 forca=random.randint(1,10)
 inteligencia=random.randint(1,10)
@@ -9,16 +10,19 @@ classe=0
 #Definindo classe
 if inteligencia>forca:
     print("Você é",nome,"o mago com muita inteligência.")
+    print("[--------------------------------------------------------]")
     classe=1
     hp=20
     danob=inteligencia
 elif forca>inteligencia:
     print("Você é",nome,"o guerreiro com muita força.")
+    print("[--------------------------------------------------------]")
     classe=2
     hp=25
     danob=forca
 elif forca==inteligencia:
     print("Você é",nome,"um arqueiro com a mesma quantidade de força e inteligência.")
+    print("[--------------------------------------------------------]")
     classe=3
     hp=20
     danob=(forca+inteligencia)/2
