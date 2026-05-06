@@ -66,7 +66,7 @@ if batalha==2:
     while cachorro>0 or hp>0:
         if cachorro<=0 or hp<=0:
             break
-        acao=int(input("Você quer desviar ou atacar:").lower())
+        acao=input("Você quer desviar ou atacar:").lower()
         if acao=="atacar":
             dano=danob*random.randint(1,3)
             dcachorro=dbcachorro*random.randint(1,3)
